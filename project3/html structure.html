@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML LAYOUTS</title>
+    <style>
+        *
+        {
+            margin: 0px;
+            
+        }
+        header,footer
+        {
+            background-color: black;
+            padding: 10px;
+        }
+        header>h1
+        {
+            color:white;
+            
+        }
+        nav
+        {
+          background-color: grey;
+          text-align: center;
+          padding: 5px;
+        }
+        nav>a
+        {
+          padding: 5px 10px;
+          color: white;
+          text-decoration: none;
+          margin: 20px;
+
+        }
+        .active
+        {
+            background-color: black;
+            border-radius: 5px;
+        }
+        nav>a:hover
+        {
+          text-decoration: underline;
+        }
+        aside
+        {
+            background-color: black;
+            width:140px;
+            height:410px;
+            text-align: center;
+            float:left;
+            
+        }
+        aside>a
+        {
+            color: white;
+            display: block;
+            text-decoration: none;
+            text-transform: uppercase;
+            margin-bottom: 35px;
+        }
+        aside>a:hover
+        {
+            text-decoration: underline;
+        }
+        section
+		{
+			background-color:rgb(241,234,233);
+			padding:5px;
+			margin-left:140px;
+		}
+		section>h2
+		{
+
+		}
+		section>article
+		{
+			background-color:black;
+			color:white;
+			padding:20px;
+		}
+		section>article>h3
+		{
+
+		}
+		section>article>button
+		{
+			background-color:orange;
+			border:none;
+			outline:none;
+		}
+        footer
+		{
+			color:white;
+			text-align:center;
+		}
+		footer a 
+		{
+			color:white;
+		}
+    </style>
+</head>
+<body>
+    <!--Main Header-->
+    <header>
+        <h1><span style="color:orange;">J</span>spiders Institute</h1>
+    </header>
+    <nav>
+        <a href="#" class="active">Home</a>
+        <a href="#">About</a>
+        <a href="#">Gallery</a>
+        <a href="#">Courses</a>
+        <a href="#">Contact</a>
+    <!--Main Navigation-->
+    </nav>
+    <!--Sidebar-->
+    <aside>
+        <a href="#">java</a>
+        <a href="#">python</a>
+        <a href="#">html</a>
+        <a href="#">Css</a>
+        <a href="#">jdbc</a>
+        <a href="#">jsp</a>
+        <a href="#">django</a>
+    </aside>
+    <!--Main Section-->
+    <section>
+        <h2>Courses:-</h2>
+        <article>
+			<h3>Java Course:-</h3>
+			<p>In deserunt eu eiusmod veniam sit amet non mollit consequat officia labore reprehenderit exercitation dolore commodo sunt. Cupidatat mollit dolor do officia proident fugiat sit commodo nostrud officia ullamco sit enim.</p>
+			<button>Join Now</button>
+		</article>
+		<article>
+			<h3>Java Course:-</h3>
+			<p>In deserunt eu eiusmod veniam sit amet non mollit consequat officia labore reprehenderit exercitation dolore commodo sunt. Cupidatat mollit dolor do officia proident fugiat sit commodo nostrud officia ullamco sit enim.</p>
+			<button>Join Now</button>
+		</article>
+		<article>
+			<h3>Java Course:-</h3>
+			<p>In deserunt eu eiusmod veniam sit amet non mollit consequat officia labore reprehenderit exercitation dolore commodo sunt. Cupidatat mollit dolor do officia proident fugiat sit commodo nostrud officia ullamco sit enim.</p>
+			<button>Join Now</button>
+		</article>
+	</section>
+    <!-- Footer -->
+	<footer>
+		<h1>CopyRights:&copy;2023</h1>
+		<small>Developed & Maintained By 
+			<a href="#">Jspiders</a></small>
+	</footer>
+
+<div style="margin-bottom:500px">
+	
+</div>
+   
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animations</title>
+    <style>
+        body
+        {
+            background-color: black;
+        }
+        div
+        {
+            position: relative;
+            top: 200px;
+            left: 300px;
+        }
+        div>span
+        {
+            background-color: black;
+            display: inline-block;
+            width: 20px;
+            height:20px;
+            margin: 30px;
+            border-radius: 100%;
+            box-shadow: 0px -5px 10px whitesmoke;
+
+            animation: bounce 1s linear 0s infinite normal;
+        }  
+        div>span:first-child
+        {
+           background-color: aqua; 
+           animation-delay: 3s;
+        }
+        div>span:nth-child(2)
+        {
+           background-color: yellow;
+           animation-delay: 8s; 
+        }
+        div>span:nth-child(3)
+        {
+           background-color: red;
+           animation-delay: 12s; 
+        }
+        div>span:nth-child(4)
+        {
+           background-color: blue;
+           animation-delay: 4s; 
+        }
+        div>span:nth-child(5)
+        {
+           background-color: green;
+           animation-delay: 9s;
+        }
+        div>span:last-child
+        {
+           background-color:violet; 
+           animation-delay: 3s;
+        }
+        @keyframes bounce
+        {
+            0%,100%
+            {
+                transform: translateY(-100px);
+            }
+            50%
+            {
+                transform: translateY(100px);
+            }
+        }
+    </style>
+    </head>
+<body>
+    <div>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</body>
+</html>
